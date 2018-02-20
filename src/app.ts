@@ -1,8 +1,4 @@
 
-let library:Library = new Library();
-library.publishItems();
-
-/*
  //activate when you finished exercise 3
 let jsonParser = new JSONParser();
 
@@ -14,4 +10,3 @@ jsonParser.getJSON("items.json", data => {
     library.getAll().forEach(item => item.render(itemContainer));
     
 });
-*/
