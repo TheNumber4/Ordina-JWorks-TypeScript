@@ -1,11 +1,9 @@
-function publishItems(title, genre, description) {
-    var article = document.createElement("article");
-    article.innerHTML =
-        "<h3>" + title + "</h3>" +
-            "<p>" + genre + "</p>" +
-            "<span>" + description + "</span>";
-    document.getElementById("items").appendChild(article);
-}
-publishItems("Matrix", "Thriller", "Did you know, Neo is the one?");
-publishItems("Moby Dick", "Drama", "Is this fish for real?");
+var library = new Library([
+    new Book("Clean Code", new Author("Robert O."), "Learning", "Lorem ipsum clean si amet."),
+    new Book("Java OCA Guiding", new Author("Robert P."), "Learning", "Lorem ipsum java si amet."),
+    new Book("Typescript Certificate Guiding", new Author("Robert T."), "Learning", "Lorem ipsum typescript si amet."),
+    new Movie("White Chicks", "Action, Comedy", "Lorem ipsum white si amet.", 16, "PG-16"),
+    new Movie("Spiderwick Chronicles", "Action, Fantasy", "Lorem ipsum spiderwick si amet.", 12, "PG-12"),
+]);
+library.render();
 //# sourceMappingURL=app.js.map
